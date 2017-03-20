@@ -43,7 +43,7 @@ def weight_variable(shape):
     return tf.Variable(tf.truncate_normal(shape, stddev=0.1))
 
 
-# 随机初始化biases
+# 随机初始化Sbiases
 def bias_variable(shape):
     return tf.Variable(tf.constant(0.1, shape=shape))
 
@@ -53,3 +53,6 @@ def conv2d(x,W):
 
 def max_pool2x2(x):
     return tf.nn.max_pool(x,ksize=[1,2,2,1],strides=[1,2,2,1],padding='SAME')
+
+
+print(1)
